@@ -30,4 +30,33 @@ class HomeScreen extends StatelessWidget {
     },
   ];
 
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Your Recipes'),
+      ),
+      body: ListView.builder(
+        itemCount: recipes.length,
+        itemBuilder: (context, index) {
+          return ListTile(
+            leading: Image.asset(recipes[index]['image']!),
+            title: Text(recipes[index]['title']!),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => DetailsScreen(
+                    title: recipes[index]['title']!,
+                    image: recipes[index]['image']!,
+                    description: recipes[index]['description']!,
+                  ),
+                ),
+              );
+            },
+          );
+        },
+      ),
+    );
+  }
 }
