@@ -21,7 +21,12 @@ class DetailsScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.asset(image),
+            Image.asset(
+              image,
+              width: 400,
+              height: 400,
+              fit: BoxFit.cover,
+            ),
             const SizedBox(height: 16),
             Text(
               title,

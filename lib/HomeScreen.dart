@@ -39,14 +39,28 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Your Recipes'),
+        title: Text(
+          'Your Recipes',
+          style: TextStyle(fontSize: 30),
+          ),
       ),
-      body: ListView.builder(
+      body: ListView.separated(
         itemCount: recipes.length,
         itemBuilder: (context, index) {
           return ListTile(
-            leading: Image.asset(recipes[index]['image']!),
-            title: Text(recipes[index]['title']!),
+            leading: ClipRRect(
+              borderRadius: BorderRadius.circular(8),
+              child: Image.asset(
+                recipes[index]['image']!,
+                width: 190,
+                height: 190,
+                fit: BoxFit.cover,
+              ),
+            ),
+            title: Text(
+              recipes[index]['title']!,
+              style: TextStyle(fontSize: 20),
+            ),
             onTap: () {
               Navigator.push(
                 context,
@@ -61,6 +75,7 @@ class HomeScreen extends StatelessWidget {
             },
           );
         },
+        separatorBuilder: (context, index) => SizedBox(height: 10),
       ),
     );
   }
