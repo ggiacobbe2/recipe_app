@@ -4,29 +4,34 @@ import 'DetailsScreen.dart';
 class HomeScreen extends StatelessWidget {
   final List<Map<String, String>> recipes = [
     {
-      'title': 'n/a',
-      'image': 'n/a',
-      'description': 'n/a'
+      'title': 'Chocolate Chip Pumpkin Bread',
+      'image': 'choc-chip-pumpkin-bread.jpeg',
+      'description': 'A moist pumpkin loaf packed with warm spices and sweet chocolate chips.'
     },
     {
-      'title': 'n/a',
-      'image': 'n/a',
-      'description': 'n/a'
+      'title': 'Banana Nut Bread',
+      'image': 'banana-nut-bread.jpeg',
+      'description': 'A soft and flavorful banana bread made with ripe bananas and crunchy walnuts.'
     },
     {
-      'title': 'n/a',
-      'image': 'n/a',
-      'description': 'n/a'
+      'title': 'Apple Cider Donuts',
+      'image': 'apple-cider-donuts.jpeg',
+      'description': 'Cinnamon-sugar coated donuts with the cozy flavor of fresh apple cider.'
     },
     {
-      'title': 'n/a',
-      'image': 'n/a',
-      'description': 'n/a'
+      'title': 'Appie Pie',
+      'image': 'apple-pie.jpeg',
+      'description': 'A classic dessert with tender spiced apples baked in a flaky golden crust.'
     },
     {
-      'title': 'n/a',
-      'image': 'n/a',
-      'description': 'n/a'
+      'title': 'Snickerdoodles',
+      'image': 'snickerdoodles.jpeg',
+      'description': 'Soft, chewy cookies rolled in cinnamon sugar for the perfect cozy treat.'
+    },
+    {
+      'title': 'Peanut Butter Brownies',
+      'image': 'pb-brownies.jpeg',
+      'description': 'Rich and fudgy brownies swirled with creamy peanut butter for a sweet-salty delight.'
     },
   ];
 
