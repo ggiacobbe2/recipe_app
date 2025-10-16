@@ -1,6 +1,6 @@
 # recipe_app
 
-A new Flutter project.
+A simple mobile/web app that allows users to scroll, browse, and click on recipes to view further details. This beginner Flutter project explores using ListView, mapping list content to a widget, and connecting multiple dart files to each other.
 
 ## Getting Started
 
